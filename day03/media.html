@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>미디어 태그를 알아보자!</title>
+</head>
+<body>
+    
+    <img
+    width="300px"
+    src="./assets/study.jpg"
+    alt="여섯 명의 사람들이 책상 앞에 모여 앉아 이야기를 나누며 공부하는 모습"
+    loading="lazy"
+    >
+
+    <hr/>
+
+    <picture>
+        <source media="(max-width: 300px)" srcset="./assets/duck.jpg"/>
+        <source media="(max-width: 400px)" srcset="./assets/hosigi.png"/>
+        <img
+        src="./assets/study.jpg"
+        alt="여섯 명의 사람들이 책상 앞에 모여 앉아 이야기를 나누며 공부하는 모습"
+        width="300px"
+        >
+    </picture>
+
+
+    <video
+        width="500px"
+        playsinline
+        autoplay
+        muted
+        loop
+    >
+    
+        <source
+            src="./assets/cave.mp4"/>
+    </video>
+        
+    <hr/>
+
+    <figure>
+            <img
+            src="./assets/study.jpg"
+            alt="여섯 명의 사람들이 책상 앞에 모여 앉아 이야기를 나누며 공부하는 모습"
+            width="300px"
+            >
+        <figcaption>스터디를 하고 있는 모습</figcaption>
+    </figure>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ep6o9_n0taU?si=cUVtmO85siN-nMI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b43fee344bbfd%3A0x7b9e4069d66df4f1!2z66el64-E64Kg65OcIOuzkeygkERU7KCQ!5e0!3m2!1sko!2skr!4v1787290345781!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</body>
+</html>

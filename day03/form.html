@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>스터디 신청 페이지</title>
+</head>
+<body>
+   <header>
+    <h1>HTML 스터디 가입 신청서</h1>
+   
+   <img width="600px" src="./assets/study.jpg" alt="여섯 명의 사람들이 책상 앞에 모여 앉아 이야기를 나누며 공부하는 모습">
+   <p>저희 스터디그룹은 그룹원 모두가 서로 도우며 함께 성장하는 것을 지향합니다.</p>
+   <p>서로 협력하며 즐겁게 공부하실 분을 모집합니다.</p>
+  
+    </header>
+
+    <hr/>
+
+    <main>
+        <h2>신청서</h2>
+        <p> * 표시는 <strong>필수</strong> 입력사항입니다.</p>
+        <form action="/study" method="get">
+        
+            <label for="user-name-form">* 이름: </label>
+            <input type="text" id="user-name-form" name="user-name-form" placeholder="ex. 홍길동" required />
+
+            <label for="user-email-form">* 이메일: </label>
+            <input type="email" id="user-email-form" name="user-email-form" placeholder="ex. abcde@gmail.com" required />
+
+            <fieldset>
+                <legend>HTML에 대해 배운 적이 있으신가요?</legend>
+                <label>
+                    <input type="radio" name="level" value="lv1" /> 처음 배웁니다.
+                </label>
+
+                <label>
+                    <input type="radio" name="level" value="lv2" /> 배운 적 있습니다.
+                </label>
+            </fieldset>
+
+            <hr/>
+
+            <label for="checkbox">* 개인정보 수집에 동의하십니까?</label>
+            <input type="checkbox" name="private" id="private" required/>
+
+            <hr/>
+            
+            <p>신청서 작성을 완료했다면?</p>
+            <input type="submit" value="제출하기">
+
+        </form>
+    </main>
+</body>
+</html>

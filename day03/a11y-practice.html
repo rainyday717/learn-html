@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>강의 신청 페이지</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#main-content">본문 바로가기</a>
+
+        <h1>범쌤 온라인 클래스</h1>
+
+        <nav aria-label="주요 메뉴">
+            <ul>
+                <li> <a href="#introduction">강의 소개</a> </li>
+                <li> <a href="#curriculum">커리큘럼</a> </li>
+                <li> <a href="#preview">미리보기</a> </li>
+                <li> <a href="#application">수강 신청</a> </li>
+                <li> <a href="#place">교육장 위치</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="introduction"></section>
+        <h2>강의 소개</h2>
+        <figure>
+            <img width="600px" src="./assets/class.jpg" alt="칠판 앞에서 강의하는 남성 교사와 수업을 듣는 학생들">
+            
+            <figcaption>범쌤의 HTML 온라인 기초 클래스에 대해서 소개합니다.</figcaption>
+        </figure>
+
+        <section id="curriculum"></section>
+        <h2>커리큘럼</h2>
+            <ol>
+                <li>HTML 문서의 기본 구조</li>
+                <li>텍스트와 목록 태그</li>
+                <li>링크와 이미지</li>
+                <li>입력 양식</li>
+                <li>미디어와 웹 접근성</li>
+            </ol>
+
+        <section id="preview"></section>
+        <h2>강의 미리보기</h2>
+            <video width="600px" controls playsinline>
+            <source src="./assets/cave.mp4"/>
+            </video>
+            <p>일부 브라우저에서는 영상이 정상적으로 보이지 않을 수 있습니다.</p>
+            <p>강사님께서 온라인으로 HTML 강의를 진행하시는 실제 모습입니다.</p>
+
+        <section id="application"></section>
+        <h2>수강 신청</h2>
+        <p>*표시는 필수 입력 사항입니다.</p>
+            
+        <form action="/class" form method="post" enctype="class-register/form-data">
+            <fieldset>
+                <legend>신청자 정보</legend>
+               
+                <ul>
+                    <li>
+                    <label for="fullname">* 이름: </label>
+                    <input type="text" id="fullname" name="fullname" placeholder="ex. 홍길동" required/>
+                    </li>   
+
+                    <li>
+                    <label for="emailaddress">* 이메일 주소: </label>
+                    <input type="email" id="emailaddress" name="emailaddress"
+                           placeholder="ex. abcdef@domain.com"
+                           aria-describedby="password-guide" required />
+                        <p id="password-guide">수강 안내를 받을 이메일 주소를 입력해 주세요.</p>
+                    </li>
+
+                    <li>
+                    <label for="phonenum">휴대폰 번호: </label>
+                    <input type="tel" id="phonenum" name="phonenum" placeholder="ex. 010-1234-5678"/>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset aria-required>
+                <legend>학습 경험</legend>
+                <p>* HTML을 공부한 경험이 있나요?</p>
+                    <label>
+                        <input type="radio" name="experience" value="first" /> 처음 배웁니다.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="experience" value="littlebit" /> 조금 배웠습니다.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="experience" value="projectexp" /> 프로젝트 경험이 있습니다.
+                    </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>관심 있는 학습 주제</legend>
+                    <label for="checkbox">
+                        <input type="checkbox" name="subject" id="HTMLstudy"/> HTML
+                    </label>
+
+                    <label for="checkbox">
+                        <input type="checkbox" name="subject" id="webaccess"/> 웹 접근성
+                    </label>
+
+                    <label for="checkbox">
+                        <input type="checkbox" name="subject" id="inputformat"/> 입력 양식
+                    </label>
+            </fieldset>
+
+             <label for="toteacher">강사에게 남길 말</label>
+             <ol>
+             <textarea
+                id="toteacher"
+                name="toteacher"
+                rows="5"
+                aria-describedby="ifquestion">
+            </textarea>  
+            </ol>
+            <p id="ifquestion">수업에서 궁금한 내용이 있다면 작성해주세요.</p>
+
+            <label for="checkbox">* 개인정보 수집 및 이용에 동의하십니까?</label>
+            <input type="checkbox" name="private" id="private" required/>
+<hr/>
+            <label for="complete">수강 신청</label>
+            <input type="submit" value="수강 신청"/>
+
+            <label for="rewrite">다시 작성하기</label>
+            <input type="reset" valuse="초기화"/>
+
+        </form>
+
+        <section id="place"></section>
+        <h2>오프라인 교육장 위치</h2>
+        <iframe width="600" height="450" loading="lazy" title="범쌤 아카데미 온라인 수업 본사 지도" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x350cfdabfc760f45%3A0x82bb205a0596fcc6!2z7J207Iqk7Yq47IaM7ZSE7Yq4IOygnOyjvOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1787302234059!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <ul>
+            <ol> <p>찾아오시는 길: <address>제주특별자치도 제주시 아라동 첨단로 300</address></p> </ol>
+            <ol> <p>tel: <tel>070-8850-8406</tel> </p> </ol>
+            <ol> <p>이메일: <mailto>estcampus@estsoft.com</mailto></p> </ol>
+        </ul>
+    </main>
+
+    <footer>
+        <small>&copy; Copyright 2026 범쌤 온라인 클래스</small>
+
+
+    </footer>
+
+</body>
+</html>

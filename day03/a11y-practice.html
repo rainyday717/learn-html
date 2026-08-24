@@ -24,15 +24,15 @@
     </header>
 
     <main id="main-content">
-        <section id="introduction"></section>
+        <section id="introduction">
         <h2>강의 소개</h2>
         <figure>
             <img width="600px" src="./assets/class.jpg" alt="칠판 앞에서 강의하는 남성 교사와 수업을 듣는 학생들">
             
             <figcaption>범쌤의 HTML 온라인 기초 클래스에 대해서 소개합니다.</figcaption>
         </figure>
-
-        <section id="curriculum"></section>
+        </section>
+        <section id="curriculum">
         <h2>커리큘럼</h2>
             <ol>
                 <li>HTML 문서의 기본 구조</li>
@@ -41,16 +41,18 @@
                 <li>입력 양식</li>
                 <li>미디어와 웹 접근성</li>
             </ol>
-
-        <section id="preview"></section>
+        </section>
+        
+        <section id="preview">
         <h2>강의 미리보기</h2>
             <video width="600px" controls playsinline>
             <source src="./assets/cave.mp4"/>
             </video>
             <p>일부 브라우저에서는 영상이 정상적으로 보이지 않을 수 있습니다.</p>
             <p>강사님께서 온라인으로 HTML 강의를 진행하시는 실제 모습입니다.</p>
+        </section>
 
-        <section id="application"></section>
+        <section id="application">
         <h2>수강 신청</h2>
         <p>*표시는 필수 입력 사항입니다.</p>
             
@@ -73,8 +75,8 @@
                     </li>
 
                     <li>
-                    <label for="phonenum">휴대폰 번호: </label>
-                    <input type="tel" id="phonenum" name="phonenum" placeholder="ex. 010-1234-5678"/>
+                    <label for="phone-number">휴대폰 번호: </label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="ex. 010-1234-5678"/>
                     </li>
                 </ul>
             </fieldset>
@@ -128,11 +130,12 @@
             <input type="submit" value="수강 신청"/>
 
             <label for="rewrite">다시 작성하기</label>
-            <input type="reset" valuse="초기화"/>
+            <input type="reset" value="초기화"/>
 
         </form>
+        </section>
 
-        <section id="place"></section>
+        <section id="place">
         <h2>오프라인 교육장 위치</h2>
         <iframe width="600" height="450" loading="lazy" title="범쌤 아카데미 온라인 수업 본사 지도" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x350cfdabfc760f45%3A0x82bb205a0596fcc6!2z7J207Iqk7Yq47IaM7ZSE7Yq4IOygnOyjvOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1787302234059!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         <ul>
@@ -140,6 +143,7 @@
             <ol> <p>tel: <tel>070-8850-8406</tel> </p> </ol>
             <ol> <p>이메일: <mailto>estcampus@estsoft.com</mailto></p> </ol>
         </ul>
+        </section>
     </main>
 
     <footer>
